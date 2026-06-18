@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8104C2062FE038E400D23116 /* Exceptions for "AluraViagens" folder in "AluraViagens" target */ = {
+		81CF37A12FE4423E00E9AB96 /* Exceptions for "AluraViagens" folder in "AluraViagens" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,10 +21,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8104C1F62FE038E200D23116 /* AluraViagens */ = {
+		81CF37982FE4423E00E9AB96 /* AluraViagens */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8104C2062FE038E400D23116 /* Exceptions for "AluraViagens" folder in "AluraViagens" target */,
+				81CF37A12FE4423E00E9AB96 /* Exceptions for "AluraViagens" folder in "AluraViagens" target */,
 			);
 			path = AluraViagens;
 			sourceTree = "<group>";
@@ -45,7 +45,7 @@
 		8104C1EB2FE038E200D23116 = {
 			isa = PBXGroup;
 			children = (
-				8104C1F62FE038E200D23116 /* AluraViagens */,
+				81CF37982FE4423E00E9AB96 /* AluraViagens */,
 				8104C1F52FE038E200D23116 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8104C1F62FE038E200D23116 /* AluraViagens */,
+				81CF37982FE4423E00E9AB96 /* AluraViagens */,
 			);
 			name = AluraViagens;
 			packageProductDependencies = (
