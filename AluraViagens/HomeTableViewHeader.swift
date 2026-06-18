@@ -2,19 +2,22 @@
 //  HomeTableViewHeader.swift
 //  AluraViagens
 //
-//  Created by Weverton Cosme de Castro Monteiro on 15/06/26.
+//  Created by Weverton Cosme de Castro Monteiro on 16/06/26.
 //
 
 import UIKit
 
 class HomeTableViewHeader: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    // MARK: IBOutlets
 
+    
+    @IBOutlet weak var tituloLabel: UILabel!
+    @IBOutlet weak var headerView: UIView!
+    
+    @IBOutlet weak var bannerImageView: UIImageView!
+    
+    func configurarView() {
+        headerView.backgroundColor = UIColor(red: 30.0/255, green: 59.0/255, blue: 119.0/255, alpha: 1)
+    }
 }
