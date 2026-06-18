@@ -15,11 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWB-WT-rVP" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <rect key="frame" x="-293" y="0.0" width="1000" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQF-my-Xj4">
-                            <rect key="frame" x="8" y="29" width="149" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQF-my-Xj4">
+                            <rect key="frame" x="314" y="48" width="148.33333333333337" height="33"/>
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -27,7 +26,9 @@
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstAttribute="width" constant="1000" id="3YZ-A0-9xZ"/>
                         <constraint firstAttribute="height" constant="250" id="GZi-7C-yVV"/>
+                        <constraint firstItem="AQF-my-Xj4" firstAttribute="top" secondItem="sWB-WT-rVP" secondAttribute="top" constant="48" id="Rdq-fV-EsP"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f22-S2-N9r" userLabel="Banner View">
@@ -80,12 +81,12 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="AQF-my-Xj4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="2W2-fU-mPy"/>
+                <constraint firstItem="sWB-WT-rVP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="D7I-om-ZLY"/>
                 <constraint firstItem="f22-S2-N9r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="RY2-77-8hy"/>
                 <constraint firstItem="sWB-WT-rVP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="U7C-Pi-n4R"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f22-S2-N9r" secondAttribute="trailing" constant="19" id="YOv-2X-25I"/>
-                <constraint firstItem="sWB-WT-rVP" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ccf-Bf-0zB"/>
                 <constraint firstItem="f22-S2-N9r" firstAttribute="bottom" secondItem="sWB-WT-rVP" secondAttribute="bottom" constant="10" id="fd1-UF-Hmi"/>
-                <constraint firstItem="sWB-WT-rVP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ixc-Sm-GM8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
