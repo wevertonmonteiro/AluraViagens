@@ -12,10 +12,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var viagensTableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configuraTableView()
+        view.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1)
+    }
+    
+    private func configuraTableView() {
+        viagensTableview.register(UINib(nibName: "ViagemTableViewCell", bundle: nil), forCellReuseIdentifier: "ViagemTableViewCell")
         viagensTableview.dataSource = self
         viagensTableview.delegate = self
-        
-        view.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1)
     }
 }
 
@@ -25,10 +29,18 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        
-        cell.textLabel?.text = "viagem \(indexPath.row)"
-        return cell
+        guard let celulaViagem = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else {
+            fatalError("Error to create ViagemTableViewCell")
+        }
+        return celulaViagem
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 400
+        guard let celulaViagem = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else {
+            fatalError("Error to create ViagemTableViewCell")
+        }
+        return celulaViagem.frame.height
     }
     
 }
