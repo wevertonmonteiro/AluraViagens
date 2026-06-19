@@ -8,16 +8,16 @@
 import UIKit
 
 class ViagemTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+    // MARK: - IBOUTLETS
+    
+    
+    @IBOutlet weak var backgroundViewCell: UIView!
+    @IBOutlet weak var viagemImage: UIImageView!
+    @IBOutlet weak var tituloViagemLabel: UILabel!
+    @IBOutlet weak var subtituloViagemLaabel: UILabel!
+    @IBOutlet weak var diariaViagemLabel: UILabel!
+    @IBOutlet weak var precoSemDescontoLabel: UILabel!
+    @IBOutlet weak var precoViagemLabel: UILabel!
+    @IBOutlet weak var statusCancelamentoViagemLabel: UILabel!
 }
